@@ -10,7 +10,7 @@
 
     {{ $style := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <link rel="icon" href="/logo.png" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
