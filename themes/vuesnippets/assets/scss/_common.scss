@@ -1,0 +1,104 @@
+@import "_variables";
+
+.shadow-lg {
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+
+a, a code {
+  color: $green;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: $darkBlue;
+  background: #607d8b0f;
+  padding: $navbarHeight+2rem 0 0;
+}
+
+ol, ul, p, blockquote, a {
+  line-height: 1.6;
+}
+
+pre, code {
+  font-family: source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace;
+  tab-size: 4;
+  line-height: 1.4;
+  font-size: .85rem;
+  color: inherit;
+  position: relative;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+}
+
+pre {
+  padding: 1.25rem 1.5rem;
+}
+
+.svg-inline--fa {
+  width: 1rem;
+}
+
+.main-wrapper {
+  display: flex;
+  width: 100%;
+
+  @media all and (max-width: 736px) {
+    flex-direction: column;
+  }
+}
+
+.disqus {
+  margin: 2rem 0;
+
+  @media all and (max-width: 736px) {
+    padding: 0 1.5rem;
+  }
+}
+
+
+.main {
+  padding: 0 2rem;
+  flex: 1;
+  width: 100%;
+
+  @media all and (max-width: 736px) {
+    padding: 0;
+  }
+}
+
+.snippets {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+
+  @media all and (max-width: 736px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 736px) {
+  .hide-sm {
+    display: none !important;
+  }
+}

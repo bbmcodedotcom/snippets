@@ -1,0 +1,25 @@
+baseURL = "https://snippets.bbmcode.com"
+languageCode = "en-us"
+title = "Snippets"
+theme = "snippets"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pagination.pagerSize = 9
+disqusShortname = "bbm-snippets"
+
+[params]
+github = "https://github.com/bbmcodedotcom/snippets"
+description = "A collection of useful snippets, trips, tricks, and best practices."
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "permalink"]
+params = ["tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]

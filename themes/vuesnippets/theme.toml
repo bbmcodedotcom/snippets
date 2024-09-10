@@ -1,0 +1,14 @@
+name = "snippets"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "The main theme for snippets.bbmcode.com"
+homepage = "https://snippets.bbmcode.com"
+tags = ["snippets"]
+features = []
+min_version = "0.31"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="{{ .Description | markdownify | plainify | default $.Site.Params.description }}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0/dist/instantsearch-theme-algolia.min.css">
+
+    {{ $style := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <link rel="icon" href="/logo.png" type="image/x-icon" />
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+
+    <div class="main-wrapper">
+      <div class="main">
+        {{ block "main" . }}
+        {{ end }}
+      </div>
+
+      {{ partial "sidebar.html" . }}
+    </div>
+
+    {{ partial "footer.html" . }}
+
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.0"></script>
+
+    {{ $js := resources.Get "js/app.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  </body>
+</html>

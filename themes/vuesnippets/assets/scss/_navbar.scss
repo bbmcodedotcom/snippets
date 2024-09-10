@@ -1,0 +1,107 @@
+@import "_variables";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  right: 0;
+  height: $navbarHeight;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaecef;
+  padding: .7rem 2rem;
+  line-height: 2.2rem;
+
+  @media all and (max-width: 736px) {
+    padding: .7rem 1.5rem;
+  }
+
+  a, img, span {
+    display: inline-block;
+  }
+
+  a.logo-wrapper {
+    .logo  {
+      margin-right: .3rem;
+      vertical-align: top;
+    }
+  }
+
+  .site-name, .tag-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $darkBlue;
+    position: relative;
+  }
+
+  .tag-name {
+    font-weight: 300;
+    opacity: .5;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  .links {
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+  }
+
+  .search-box {
+    display: inline-block;
+    position: relative;
+
+    @media all and (max-width: 736px) {
+      margin-right: 0;
+    }
+
+    input {
+      cursor: text;
+      width: 10rem;
+      color: #4e6e8e;
+      display: inline-block;
+      border: 1px solid #cfd4db;
+      border-radius: 2rem;
+      font-size: .9rem;
+      line-height: 2rem;
+      padding: 0 .5rem 0 2rem;
+      outline: none;
+      transition: .2s;
+      box-shadow: none;
+
+      &:focus {
+        border-color: $green;
+      }
+
+      @media all and (max-width: 736px) {
+        width: 5rem;
+
+        &:focus {
+          width: 10rem;
+          box-shadow: 0 0 10px 10px #fff;
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    display: inline-block;
+
+    .nav-item {
+      position: relative;
+      display: inline-block;
+      margin-left: 1.5rem;
+      line-height: 2rem;
+    }
+
+    a {
+      line-height: 1.4rem;
+      color: inherit;
+      margin-left: .5rem;
+    }
+  }
+}

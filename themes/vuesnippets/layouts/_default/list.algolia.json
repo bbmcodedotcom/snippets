@@ -1,0 +1,25 @@
+{{/* Generates a valid Algolia search index */}}
+{{- $.Scratch.Add "index" slice -}}
+{{- $section := .Site.GetPage (printf "/%s" .Section) -}}
+{{- range .Site.RegularPages -}}
+  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+    {{- $.Scratch.Add "index" (dict 
+      "objectID" (default (.File.Path | urlize) .RelPermalink) 
+      "date" .Date.UTC.Unix 
+      "description" .Params.description 
+      "kind" .Kind 
+      "lang" .Lang 
+      "lastmod" .Lastmod.UTC.Unix 
+      "permalink" .Permalink 
+      "publishdate" .PublishDate.UTC.Unix 
+      "relpermalink" .RelPermalink 
+      "summary" .Summary 
+      "title" .Title 
+      "type" .Type 
+      "section" .Section 
+      "tags" .Params.tags 
+      "author" .Params.author
+    )}}
+  {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

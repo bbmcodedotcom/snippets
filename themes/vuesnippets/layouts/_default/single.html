@@ -1,0 +1,20 @@
+{{ define "title" }}
+  {{ .Title }} | {{ $.Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "snippet/full.html" . }}
+
+  <nav class="pagination pagination-single">
+    {{ with .PrevInSection }}
+      <a class="previous background-sm" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a class="next background-sm" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+    {{ end }}
+  </nav>
+
+  <div class="disqus">
+    {{ template "_internal/disqus.html" . }}
+  </div>
+{{ end }}

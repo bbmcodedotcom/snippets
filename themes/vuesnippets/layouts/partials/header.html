@@ -1,0 +1,21 @@
+<header class="navbar">
+    <a href="/" class="logo-wrapper">
+      <img src="/logo.png" width="32" height="32" class="logo" alt="Snippets logo">
+      <span class="site-name">{{ .Site.Title }}</span>
+    </a>
+
+    {{ if eq .Page.Kind "taxonomy" }}
+      <span class="tag-name hide-sm">{{ .Data.Term }}</span>
+    {{ end }}
+
+    <div class="links">
+      <div class="search">
+        <div class="search-box" id="searchBox"></div>
+        <div id="hits" class="shadow-sm"></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="{{ $.Site.Params.github }}" class="hide-sm">GitHub</a>
+      </div>
+    </div>
+  </header>
