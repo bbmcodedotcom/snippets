@@ -34,5 +34,3 @@ export default {
 }
 </script>
 ```
-
-This tip originally appeared as [a tweet](https://twitter.com/calebporzio/status/1034846966730158080).

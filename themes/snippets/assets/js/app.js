@@ -1,7 +1,6 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then(registration => {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope)
     }, err => {
       console.log('ServiceWorker registration failed: ', err)
     })
@@ -50,12 +49,6 @@ search.addWidget(instantsearch.widgets.hits({
     item: itemTemplate
   }
 }))
-
-const algoliaLogo = document.createElement('img')
-algoliaLogo.src = 'https://www.algolia.com/static_assets/images/pricing/pricing_new/algolia-powered-by-14773f38.svg'
-algoliaLogo.classList.add('algolia-logo')
-
-search.on('render', () => resultPanel.appendChild(algoliaLogo))
 
 search.start()
 

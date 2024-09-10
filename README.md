@@ -13,7 +13,7 @@ So you have a trick or two up your sleeve and want to share them with the world?
   ---
   title: "Your Snippets"
   date: 2024-08-11T18:50:07+07:00
-  description: A short description.
+  description: A short description for the snippet.
   tags: [js, PHP, react]
   author:
     name: Your Name

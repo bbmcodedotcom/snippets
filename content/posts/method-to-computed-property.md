@@ -57,5 +57,3 @@ export default {
 ```
 
 This results in simpler and decoupled components, structured and moduralized code, plus you have the benefits of computed property's caching for free.
-
-Originally tweeted by [@alexjoverm](https://twitter.com/alexjoverm/status/1028907524504870912).

@@ -20,14 +20,11 @@
   <img class="avatar shadow-sm" src="{{ .Scratch.Get "avatar" }}" width="36" height="36" alt="{{ $.Param "author.name" }}'s Avatar">
 
   <div class="details">
-    <h4 class="name"><a href="{{ .Scratch.Get "homepage" }}">{{ $author.name }}</a></h4>
+    <h4 class="name"><a href="{{ .Scratch.Get "homepage" }}" target="_blank">{{ $author.name }}</a></h4>
 
     <div class="social">
       {{ with $author.github }}
-        <a href="https://github.com/{{ . }}">{{ partial "icons/github.svg" }}</a>
-      {{ end }}
-      {{ with $author.twitter }}
-        <a href="https://twitter.com/{{ . }}">{{ partial "icons/twitter.svg" }}</a>
+        <a href="https://github.com/{{ . }}" target="_blank">{{ partial "icons/github.svg" }}</a>
       {{ end }}
     </div>
   </div>

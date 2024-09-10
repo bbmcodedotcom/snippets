@@ -2,7 +2,7 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 description: A short description for the snippet.
-tags: [max, three, tags]
+tags: [js, PHP, react]
 author:
   name: Your Name
   email: your@email.tld
