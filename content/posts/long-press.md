@@ -1,5 +1,5 @@
 ---
-title: 'Long press directive'
+title: 'Vuejs Long press directive'
 date: 2018-08-13T08:38:53+02:00
 description: A simple directive to execute a function when the element is long-pressed.
 tags: [event, directive, dom]

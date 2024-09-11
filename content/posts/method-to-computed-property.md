@@ -1,12 +1,12 @@
 ---
-title: "Methods to computed properties"
+title: "Vuejs Methods to computed properties"
 date: 2018-08-14T08:17:15+02:00
 description: When you find yourself in need of using an argument for a computed property, consider creating and moving the logic into a child component.
 tags: [component, computed property]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com
-  homepage: https://phanan.net
+  homepage: https://bbmcode.com
   github: bbmcodedotcom
 ---
 

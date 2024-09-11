@@ -1,5 +1,5 @@
 ---
-title: "Click Away"
+title: "Vuejs Click Away"
 date: 2018-08-11T14:20:19+02:00
 description:  A simple directive that triggers a function if the user clicks outside of the bound element.
 tags: [directive, utility]
