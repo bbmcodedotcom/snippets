@@ -2,7 +2,7 @@
 title: "Vuejs Auto Focus"
 date: 2018-08-11T08:17:43+02:00
 description: Automatically set focus into an input element when it's inserted into the document.
-tags: [directive, utility]
+tags: [directive, utility, vuejs]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com

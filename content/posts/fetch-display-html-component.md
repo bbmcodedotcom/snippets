@@ -2,7 +2,7 @@
 title: "Vuejs Fetch and display HTML"
 date: 2018-08-12T11:08:25+02:00
 description: Sometimes you just want to fetch some HTML from the server, display them right in your application, and call it done.
-tags: [utility, component, ajax]
+tags: [utility, component, ajax, vuejs]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com

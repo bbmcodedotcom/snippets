@@ -2,7 +2,7 @@
 title: "Vuejs Manage Document Title"
 date: 2018-08-22T11:32:48+02:00
 description: Update the document's title with reactive data.
-tags: [DOM]
+tags: [DOM, vuejs]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com

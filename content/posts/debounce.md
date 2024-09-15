@@ -2,7 +2,7 @@
 title: "Vuejs Debounce"
 date: 2018-08-11T11:58:34+02:00
 description: Prevent your methods or events from being executed so often using lodash's [`debounce()`](https://www.npmjs.com/package/lodash.debounce) function.
-tags: [utility]
+tags: [utility, vuejs]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com
