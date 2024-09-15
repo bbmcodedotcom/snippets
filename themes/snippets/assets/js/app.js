@@ -9,10 +9,11 @@ if ('serviceWorker' in navigator) {
 
 const resultPanel = document.getElementById('hits')
 
+// config Algolia
 const search = instantsearch({
-  appId: 'AQKEBHIMMP',
-  apiKey: '9906de1d3ad74b84b5e77b9ead8f4895',
-  indexName: 'prod_VUE_SNIPPETS',
+  appId: '4UAX1KD5IL',
+  apiKey: '08e55afa8e3d1d2633edd4ce2c88a2cc',
+  indexName: 'prod_SNIPPETS_BBMCODE',
   routing: true,
   searchParameters: {
     hitsPerPage: 5
