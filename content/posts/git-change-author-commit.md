@@ -1,7 +1,7 @@
 ---
-title: "Git Change Author and Committer"
+title: "Git Change Author Commit"
 date: 2024-09-17T16:30:05+07:00
-description: a shell function to change the author and committer of a git commit.
+description: a shell function to change the author of a git commit.
 tags: [script, git]
 author:
   name: BBMCode
