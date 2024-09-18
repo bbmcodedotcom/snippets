@@ -28,5 +28,5 @@ Go to folder repository, `git add` your changing.
 
 Now simply run
 ```sh
-commitas "BBM Code" "test@bbmcode.com" "Do something"
+commitas "BBMCode" "test@bbmcode.com" "Do something"
 ```
