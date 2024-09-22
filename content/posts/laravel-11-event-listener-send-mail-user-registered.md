@@ -2,7 +2,7 @@
 title: "Laravel 11 Event & Listener Send Email User Registered"
 date: 2024-09-22T23:34:26+07:00
 description: Dispatch event when user is registered and send welcome email
-tags: [js, PHP, react]
+tags: [laravel, PHP, event, listener]
 author:
   name: BBMCode
   email: bbmcode247@gmail.com
