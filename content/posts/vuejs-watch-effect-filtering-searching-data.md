@@ -1,5 +1,5 @@
 ---
-title: "Vuejs Watch Effect Filtering and Searching Data"
+title: "Vuejs watchEffect Filtering and Searching Data"
 date: 2024-09-23T23:07:44+07:00
 description: watchEffect automatically filters the user list based on the search query, great for real-time search scenarios.
 tags: [js, vuejs, watchEffect]
