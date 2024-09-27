@@ -1,7 +1,7 @@
 ---
 title: "Error Boundary in React"
 date: 2024-09-27T22:55:19+07:00
-description: Error boundaries catchs JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the whole application
+description: Error boundaries catchs errors anywhere in their child component tree and display a fallback UI instead of crashing the whole application
 tags: [react]
 author:
   name: BBMCode
@@ -37,7 +37,7 @@ class ErrorBoundary extends Component {
       // You can render any custom fallback UI
       return (
         <div>
-          <h1>Something went wrong.</h1>
+          <h1>bbmcode.com</h1>
           <details style={{ whiteSpace: 'pre-wrap' }}>
             {this.state.error && this.state.error.toString()}
             <br />
